@@ -81,6 +81,20 @@ hr {
     margin: 0;
 }
 
+.resources h4 {
+    margin: 0;
+    margin-top: 40px;
+    text-decoration: underline;
+}
+
+.resources ul {
+    margin: 0;
+}
+
+.resources p {
+    margin: 0;
+}
+
 @media only screen and (max-width: 1000px) {
     div.bio {
         flex-direction: column;
