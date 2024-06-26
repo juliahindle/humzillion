@@ -29,7 +29,7 @@ body {
 }
 
 b {
-    font-weight: 500;
+    font-weight: 600;
 }
 
 main {
@@ -55,32 +55,29 @@ span {
 
 ul.links li {
     list-style-type: none;
-    padding: 5px 10px;
+    padding: 0 10px;
     margin: 0 8px;
-    padding-top: 3px;
+    padding-bottom: 2px;
 }
 
 ul.main.links li {
-    background: white;
+    background: #b6d2f1;
     border-radius: 10px;
     box-shadow: 5px 5px 0 black;
     border: 2px solid black;
 }
 
 ul.ext.links li {
-    background: #1c4f8870;
+    background: #7da4cf;
     border-radius: 20px;
     padding: 1px 19px;
     margin-top: 5px;
     padding-bottom: 3px;
-}
-
-ul.ext.links li:hover {
-    background: #4b76a7ab;
+    margin: 0 5px;
 }
 
 ul.main.links li:hover {
-    background: #b6d2f1;
+    background: #7da4cf;
 }
 
 ul.main.links li.selected {
@@ -88,10 +85,14 @@ ul.main.links li.selected {
     font-weight: 500;
 }
 
+ul.ext.links li:hover {
+    background: #4b76a7ab;
+}
+
 ul.links li a {
     text-decoration: none;
     color: black;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 ul.ext.links li a {
@@ -111,12 +112,17 @@ div.bio img {
     margin-right: 15px;
 }
 
-h4, h2 {
+h4, h3, h2 {
     font-weight: 500;
 }
 
 h2 {
     margin-top: 5px;
+}
+
+h4 {
+    font-size: 22px;
+    font-weight: 600;
 }
 
 .italic {
@@ -138,9 +144,10 @@ hr {
     width: 100%;
     height: 2px;
     margin: 0;
+    margin-top: 30px;
 }
 
-.resources h4 {
+.resources h3 {
     margin: 0;
     margin-bottom: 15px;
     margin-top: 60px;
@@ -153,10 +160,15 @@ hr {
 
 .resources li {
     list-style-type: none;
+    margin: 12px 0;
 }
 
 .resources p {
     margin: 0;
+}
+
+.resources a {
+    margin-bottom: 10px;
 }
 
 @media only screen and (max-width: 1000px) {
