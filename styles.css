@@ -20,12 +20,16 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.5);
     background-blend-mode: lighten;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0;
+}
+
+b {
+    font-weight: 500;
 }
 
 main {
@@ -37,19 +41,64 @@ main {
     text-align: center;
 }
 
-ul.main-links {
+ul.links {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-ul.main-links li {
-    list-style-type: none;
+span {
+    display: none;
 }
 
-ul.main-links li a {
+ul.links li {
+    list-style-type: none;
+    padding: 5px 10px;
+    margin: 0 8px;
+    padding-top: 3px;
+}
+
+ul.main.links li {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0 black;
+    border: 2px solid black;
+}
+
+ul.ext.links li {
+    background: #1c4f8870;
+    border-radius: 20px;
+    padding: 1px 19px;
+    margin-top: 5px;
+    padding-bottom: 3px;
+}
+
+ul.ext.links li:hover {
+    background: #4b76a7ab;
+}
+
+ul.main.links li:hover {
+    background: #b6d2f1;
+}
+
+ul.main.links li.selected {
+    background: #b6d2f1;
+    font-weight: 500;
+}
+
+ul.links li a {
     text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+ul.ext.links li a {
+    color: white;
+}
+
+img.hummingbird {
+    margin-top: 40px;
 }
 
 div.bio {
@@ -61,8 +110,12 @@ div.bio img {
     margin-right: 15px;
 }
 
-h4 {
+h4, h2 {
     font-weight: 500;
+}
+
+h2 {
+    margin-top: 5px;
 }
 
 .italic {
@@ -70,7 +123,12 @@ h4 {
 }
 
 .warning {
-    color: rgb(168, 0, 0);
+    color: rgb(200, 0, 0);
+}
+
+.indent {
+    text-align: center;
+    margin: 40px;
 }
 
 hr {
@@ -83,12 +141,17 @@ hr {
 
 .resources h4 {
     margin: 0;
-    margin-top: 40px;
-    text-decoration: underline;
+    margin-bottom: 15px;
+    margin-top: 60px;
 }
 
 .resources ul {
     margin: 0;
+    padding: 0;
+}
+
+.resources li {
+    list-style-type: none;
 }
 
 .resources p {
@@ -108,14 +171,21 @@ hr {
 }
 
 @media only screen and (max-width: 550px) {
+    * {
+        font-size: 18px;
+    }
+
     main {
         padding: 20px;
     }
-    ul.main-links {
-        flex-direction: column;
-    }
+}
 
-    ul.main-links span {
-        display: none;
+@media only screen and (max-width: 460px) {
+    ul.links li a {
+        font-size: 14px;
+    }
+    
+    ul.links li {
+        padding-top: 0;
     }
 }
