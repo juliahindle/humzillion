@@ -32,3 +32,28 @@ main {
 p.center {
     text-align: center;
 }
+
+ul.main-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+ul.main-links li {
+    list-style-type: none;
+}
+
+ul.main-links li a {
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 550px) {
+    ul.main-links {
+        flex-direction: column;
+    }
+
+    ul.main-links span {
+        display: none
+    }
+}
