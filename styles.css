@@ -14,12 +14,12 @@ img {
 }
 
 body {
-    background-image: url(images/clouds10.jpeg);
+    background-image: url(images/clouds12-expand-downsize.jpg);
     background-position: 20%;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.3);
     background-blend-mode: lighten;
     display: flex;
     flex-direction: column;
