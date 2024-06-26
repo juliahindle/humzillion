@@ -1,0 +1,34 @@
+* {
+    font-family: neue-haas-unica, sans-serif;
+    font-size: 20px;
+}
+
+.logo {
+}
+
+img {
+    margin: auto;
+    display: flex;
+}
+
+body {
+    background-image: url(images/clouds10.jpeg);
+    background-position: 20%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    background-color: rgba(255, 255, 255, 0.1);
+    background-blend-mode: lighten;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    padding: 30px;
+    max-width: 1200px;
+}
+
+p.center {
+    text-align: center;
+}
