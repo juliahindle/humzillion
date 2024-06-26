@@ -9,6 +9,8 @@
 img {
     margin: auto;
     display: flex;
+    max-width: 700px;
+    width: 100%;
 }
 
 body {
@@ -49,12 +51,33 @@ ul.main-links li a {
     text-decoration: none;
 }
 
+div.bio {
+    display: flex;
+}
+
+div.bio img{
+    width: 25%;
+    margin-right: 15px;
+}
+
+@media only screen and (max-width: 1000px) {
+    div.bio {
+        flex-direction: column;
+    }
+
+    div.bio img{
+        margin: 0;
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
 @media only screen and (max-width: 550px) {
     ul.main-links {
         flex-direction: column;
     }
 
     ul.main-links span {
-        display: none
+        display: none;
     }
 }
