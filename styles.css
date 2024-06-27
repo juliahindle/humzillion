@@ -107,9 +107,25 @@ div.bio {
     display: flex;
 }
 
+div.bio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+div.bio img.family {
+    width: 59%;
+}
+
+div.bio img.stu {
+    width: 37%;
+}
+
 div.bio img {
-    width: 25%;
-    margin-right: 15px;
+    margin: 1%;
+    box-sizing: border-box;
+    max-width: unset;
 }
 
 h4, h3, h2 {
@@ -147,10 +163,8 @@ hr {
     margin-top: 30px;
 }
 
-.resources h3 {
-    margin: 0;
-    margin-bottom: 15px;
-    margin-top: 60px;
+.resources h4 {
+    font-weight: 400;
 }
 
 .resources ul {
@@ -164,23 +178,24 @@ hr {
 }
 
 .resources p {
-    margin: 0;
+    margin: 20px 0;
 }
 
 .resources a {
     margin-bottom: 10px;
 }
 
-@media only screen and (max-width: 1000px) {
-    div.bio {
-        flex-direction: column;
-    }
+.resources li.challenge {
+    margin-top: 30px;
+}
 
-    div.bio img{
-        margin: 0;
-        width: 100%;
-        max-width: 300px;
-    }
+.hums {
+    position: relative;
+}
+
+.hums .gif {
+    position: absolute;
+    max-width: 100px;
 }
 
 @media only screen and (max-width: 550px) {
@@ -190,6 +205,15 @@ hr {
 
     main {
         padding: 20px;
+    }
+
+    div.bio {
+        flex-direction: column;
+    }
+
+    div.bio img.stu, div.bio img.family {
+        margin: 10px;
+        width: 100%;
     }
 }
 
