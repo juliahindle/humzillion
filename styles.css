@@ -176,10 +176,6 @@ hr {
     font-weight: 400;
 }
 
-.resources .subtitle {
-    margin-bottom: 0;
-}
-
 .resources ul {
     margin: 0;
     padding: 0;
@@ -202,7 +198,7 @@ hr {
     margin-bottom: 10px;
 }
 
-.resources li.challenge {
+.resources p.challenge {
     margin-top: 30px;
 }
 
