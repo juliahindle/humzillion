@@ -119,7 +119,6 @@ div.bio .stu {
 }
 
 div.bio p.stu {
-    text-align: center;
     font-size: 12px;
 }
 
@@ -131,6 +130,7 @@ div.bio img {
     margin: 1%;
     box-sizing: border-box;
     max-width: unset;
+    margin-bottom: 0;
 }
 
 div.bio p {
@@ -236,9 +236,9 @@ div.outro {
 
 div.outro img {
     position: absolute;
-    width: 36px;
-    top: 0;
-    left: 180px;
+    width: 90px;
+    top: -5px;
+    left: 190px;
 }
 
 div.outro p {
@@ -268,10 +268,13 @@ div.outro p {
     div.bio img.stu, div.bio img.family {
         margin: 10px;
         width: 100%;
+        margin-bottom: 0;
     }
 
     div.bio p.stu.mobile-hack {
         display: block;
+        align-self: flex-end;
+        text-align: right;
     }
 
     div.bio p {
