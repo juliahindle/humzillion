@@ -245,6 +245,10 @@ div.outro p {
     margin: 5px;
 }
 
+sup {
+    font-size: 14px;
+}
+
 @media only screen and (max-width: 800px) {
     .resources img {
         margin: auto;
